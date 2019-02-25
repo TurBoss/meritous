@@ -46,11 +46,12 @@ void HandleGamepad (int key_held[])
 		int i;
 		for (i = 0; i < num_joysticks; i++)
 			printf ("joystick %d = \"%s\"\n", i, SDL_JoystickName (i));
-
+    /*
 		if (num_joysticks != 1) {
 			printf ("error: %d joysticks detected\n", num_joysticks);
 			return;
 		}
+		*/
 		int joystick_index = 0;
 
 		joy = SDL_JoystickOpen (joystick_index);
@@ -84,4 +85,3 @@ void HandleGamepad (int key_held[])
 		hold (key_held, K_SP, buttons[14]);
 	}
 }
-
