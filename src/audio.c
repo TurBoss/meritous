@@ -52,7 +52,7 @@ Mix_Chunk *c_sample[16] = {NULL};
 
 void InitAudio()
 {
-	Mix_OpenAudio(44100, AUDIO_S16, 2, 4096);
+	Mix_OpenAudio(48000, AUDIO_S16, 2, 512);
 	Mix_VolumeMusic(112);
 	Mix_AllocateChannels(16);
 }
