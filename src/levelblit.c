@@ -81,9 +81,7 @@ unsigned char font_data[128][8][8];
 
 void DrawShield();
 
-void HandleGamepad (int key_held[], int enter_pressed, int map_enabled,
-	int game_running, int game_paused, int voluntary_exit, int pressed_tab,
-	int tele_select);
+void HandleGamepad (int key_held[]);
 
 int key_held[10] = {0};
 int game_running = 1;
@@ -1469,8 +1467,7 @@ void HandleEvents()
 			}
 		}
 
-	HandleGamepad(key_held, enter_pressed, map_enabled, game_running,
-		game_paused, voluntary_exit, pressed_tab, tele_select);
+	HandleGamepad(key_held);
 
 	if (RECORDING) {
 		db = 0;
