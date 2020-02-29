@@ -1468,7 +1468,7 @@ void HandleEvents()
 		}
 
 	HandleGamepad (key_held, enter_pressed, map_enabled, game_running,
-		game_paused, voluntary_exit, pressed_tab, tele_selec);
+		game_paused, voluntary_exit, pressed_tab, tele_select);
 
 	if (RECORDING) {
 		db = 0;

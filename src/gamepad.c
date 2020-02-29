@@ -93,6 +93,5 @@ void HandleGamepad (int key_held[], int enter_pressed, int map_enabled,
 		voluntary_exit = buttons[5];
 		pressed_tab = buttons[6];
 		tele_selec = buttons[7];
-
 	}
 }
