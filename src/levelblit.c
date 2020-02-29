@@ -540,8 +540,7 @@ int main(int argc, char **argv)
 		title_pr = IMG_Load("dat/i/title.png");
 
 		while (on_title) {
-			HandleGamepad (key_held);
-			
+
 			SetTitlePalette2(ticker_tick);
 			col_p = (Uint8 *)title_pr->pixels;
 			src_p = (Uint8 *)title->pixels;
@@ -600,6 +599,8 @@ int main(int argc, char **argv)
 
 			light = 0;
 			tick -= 2;
+
+			HandleGamepad (key_held);
 		}
 
 		ClearInput();
