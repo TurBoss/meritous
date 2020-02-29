@@ -22,7 +22,9 @@ static void hold (int key_held[], int k, int held)
 	}
 }
 
-void HandleGamepad (int key_held[])
+void HandleGamepad (int key_held[], int enter_pressed, int map_enabled,
+	int game_running, int game_paused, int voluntary_exit, int pressed_tab,
+	int tele_selec)
 {
 	static char state = '0';
 #define MAX 32
@@ -83,5 +85,14 @@ void HandleGamepad (int key_held[])
 		hold (key_held, K_DN, axes[1] >  1000 || axes[3] >  1000 || buttons[6]);
 		hold (key_held, K_LT, axes[0] < -1000 || axes[2] < -1000 || buttons[7]);
 		hold (key_held, K_SP, buttons[3]);
+
+		map_enabled = buttons[0];
+		enter_pressed = buttons[1];
+		game_running = buttons[2];
+		game_paused = buttons[9];
+		voluntary_exit = buttons[5];
+		pressed_tab = buttons[6];
+		tele_selec = buttons[7];
+
 	}
 }
