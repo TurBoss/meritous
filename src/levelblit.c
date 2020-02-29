@@ -540,6 +540,8 @@ int main(int argc, char **argv)
 		title_pr = IMG_Load("dat/i/title.png");
 
 		while (on_title) {
+			HandleGamepad (key_held);
+			
 			SetTitlePalette2(ticker_tick);
 			col_p = (Uint8 *)title_pr->pixels;
 			src_p = (Uint8 *)title->pixels;
@@ -2670,4 +2672,3 @@ void ThinLine(SDL_Surface *scr, int x1, int y1, int x2, int y2, Uint8 col)
 		}
 	}
 }
-
