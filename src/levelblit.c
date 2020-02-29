@@ -1467,7 +1467,7 @@ void HandleEvents()
 			}
 		}
 
-	// HandleGamepad (key_held);
+	HandleGamepad (key_held);
 
 	if (RECORDING) {
 		db = 0;
