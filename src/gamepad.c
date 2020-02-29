@@ -86,12 +86,12 @@ void HandleGamepad (int key_held[], int enter_pressed, int map_enabled,
 		hold (key_held, K_LT, axes[0] < -1000 || axes[2] < -1000 || buttons[7]);
 		hold (key_held, K_SP, buttons[3]);
 
-		map_enabled = buttons[0];
-		enter_pressed = buttons[1];
-		game_running = buttons[2];
-		game_paused = buttons[9];
-		voluntary_exit = buttons[5];
-		pressed_tab = buttons[6];
-		tele_select = buttons[7];
+		hold(map_enabled , buttons[0]);
+		hold(enter_pressed = buttons[1]);
+		hold(game_running = buttons[2]);
+		hold(game_paused = buttons[9]);
+		hold(voluntary_exit = buttons[5]);
+		hold(pressed_tab = buttons[6]);
+		hold(tele_select = buttons[7]);
 	}
 }
