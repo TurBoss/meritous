@@ -82,6 +82,6 @@ void HandleGamepad (int key_held[])
 		hold (key_held, K_RT, axes[0] >  1000 || axes[2] >  1000 || buttons[5]);
 		hold (key_held, K_DN, axes[1] >  1000 || axes[3] >  1000 || buttons[6]);
 		hold (key_held, K_LT, axes[0] < -1000 || axes[2] < -1000 || buttons[7]);
-		hold (key_held, K_SP, buttons[14]);
+		hold (key_held, K_SP, buttons[12]);
 	}
 }
