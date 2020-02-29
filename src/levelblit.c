@@ -81,7 +81,7 @@ unsigned char font_data[128][8][8];
 
 void DrawShield();
 
-void HandleGamepad (int key_held[]void HandleGamepad (int key_held[], int enter_pressed, int map_enabled,
+void HandleGamepad (int key_held[], void HandleGamepad (int key_held[], int enter_pressed, int map_enabled,
 	int game_running, int game_paused, int voluntary_exit, int pressed_tab,
 	int tele_select);
 
